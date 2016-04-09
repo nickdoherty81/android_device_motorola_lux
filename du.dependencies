@@ -1,0 +1,28 @@
+[
+  {
+    "repository":  "NickDoherty81/android_device_motorola_msm8916-common",
+    "target_path": "device/motorola/msm8916-common",
+    "branch":       "m-caf"
+  },
+  {
+    "repository":   "NickDoherty81/android_kernel_motorola_msm8916",
+    "target_path":  "kernel/motorola/msm8916",
+    "branch":       "m-caf"
+  },
+  {
+    "repository":   "NickDoherty81/android_vendor_motorola",
+    "target_path":  "vendor/motorola",
+    "branch":       "m-caf"
+   },
+   {
+    "repository":   "DirtyUnicorns/android_external_bson",
+    "target_path":  "external/bson",
+    "branch":       "lollipop-caf"
+   },
+   {
+    "repository":   "DirtyUnicorns/android_external_stlport",
+    "target_path":  "external/stlport",
+    "branch":       "m-caf"
+   }
+]
+
