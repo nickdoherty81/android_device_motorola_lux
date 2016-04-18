@@ -10,7 +10,7 @@
     "branch":       "m-caf"
   },
   {
-    "repository":   "NickDoherty81/android_vendor_motorola",
+    "repository":   "NickDoherty81/proprietary_vendor_motorola",
     "target_path":  "vendor/motorola",
     "branch":       "m-caf"
    },
