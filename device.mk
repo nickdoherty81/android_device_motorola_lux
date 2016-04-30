@@ -61,3 +61,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     sys.usb.config=mtp,adb \
     persist.sys.usb.config=mtp,adb \
     ro.adb.secure=0
+
+# Thermal
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/configs/thermal-engine-lux.conf:system/etc/thermal-engine-lux.conf
