@@ -25,6 +25,11 @@
     "branch":       "m-caf"
   },
   {
+    "repository":   "DirtyUnicorns/android_vendor_qcom_opensource_dataservices",
+    "target_path":  "vendor/qcom/opensource/dataservices",
+    "branch":       "m-caf"
+  },
+  {
     "repository":   "DirtyUnicorns/android_hardware_qcom_fm",
     "target_path":  "hardware/qcom/fm",
     "branch":       "m-caf"
