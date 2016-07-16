@@ -10,3 +10,6 @@ ro.sf.lcd_density=420
 
 # du updater
 ro.du.updater=lux
+
+# Radio
+ro.telephony.default_network=9
