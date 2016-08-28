@@ -19,11 +19,31 @@ $(call inherit-product, device/motorola/msm8916-common/msm8916.mk)
 # Screen density
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Dalvik
+$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths_florida.xml
+
+# Firmware Extraction
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/extract_firmware.sh:install/bin/extract_firmware.sh
+
+# Keymaster
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/keymaster/keymaster.b00:$(TARGET_OUT_VENDOR)/firmware/keymaster/keymaster.b00 \
+     $(LOCAL_PATH)/keymaster/keymaster.b01:$(TARGET_OUT_VENDOR)/firmware/keymaster/keymaster.b01 \
+     $(LOCAL_PATH)/keymaster/keymaster.b02:$(TARGET_OUT_VENDOR)/firmware/keymaster/keymaster.b02 \
+     $(LOCAL_PATH)/keymaster/keymaster.b03:$(TARGET_OUT_VENDOR)/firmware/keymaster/keymaster.b03 \
+     $(LOCAL_PATH)/keymaster/keymaster.mdt:$(TARGET_OUT_VENDOR)/firmware/keymaster/keymaster.mdt \
+
+# Firmware Extraction
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/extract_firmware.sh:install/bin/extract_firmware.sh
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -55,12 +75,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.target.rc
-
-# set default USB configuration
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    sys.usb.config=mtp,adb \
-    persist.sys.usb.config=mtp,adb \
-    ro.adb.secure=0
 
 # Thermal
 PRODUCT_COPY_FILES += \
