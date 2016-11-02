@@ -10,18 +10,8 @@
     "branch":       "n-caf"
   },
   {
-    "repository":   "DirtyUnicorns/android_vendor_motorola",
-    "target_path":  "vendor/motorola",
-    "branch":       "n-caf"
-  },
-  {
     "repository":   "DirtyUnicorns/android_external_bson",
     "target_path":  "external/bson",
-    "branch":       "n-caf"
-  },
-  {
-    "repository":   "DirtyUnicorns/android_vendor_qcom_opensource_dataservices",
-    "target_path":  "vendor/qcom/opensource/dataservices",
     "branch":       "n-caf"
   },
   {
@@ -42,6 +32,16 @@
   {
     "repository":   "DirtyUnicorns/android_hardware_qcom_fm",
     "target_path":  "hardware/qcom/fm",
-    "branch":       "m-caf"
+    "branch":       "n-caf"
+  },
+  {
+    "repository":   "DirtyUnicorns/android_packages_apps_FMRadio",
+    "target_path":  "packages/apps/FMRadio",
+    "branch":       "n-caf"
+  },
+  {
+    "repository":   "DirtyUnicorns/android_vendor_motorola",
+    "target_path":  "vendor/motorola",
+    "branch":       "n-caf"
   }
 ]
