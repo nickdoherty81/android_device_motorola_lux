@@ -2,32 +2,42 @@
   {
     "repository":   "DirtyUnicorns/android_device_motorola_msm8916-common",
     "target_path":  "device/motorola/msm8916-common",
-    "branch":       "m-caf"
+    "branch":       "n-caf"
   },
   {
     "repository":   "DirtyUnicorns/android_kernel_motorola_msm8916",
     "target_path":  "kernel/motorola/msm8916",
-    "branch":       "m-caf"
+    "branch":       "n-caf"
   },
   {
     "repository":   "DirtyUnicorns/android_vendor_motorola",
     "target_path":  "vendor/motorola",
-    "branch":       "m-caf"
+    "branch":       "n-caf"
   },
   {
     "repository":   "DirtyUnicorns/android_external_bson",
     "target_path":  "external/bson",
-    "branch":       "m-caf"
-  },
-  {
-    "repository":   "DirtyUnicorns/android_external_stlport",
-    "target_path":  "external/stlport",
-    "branch":       "m-caf"
+    "branch":       "n-caf"
   },
   {
     "repository":   "DirtyUnicorns/android_vendor_qcom_opensource_dataservices",
     "target_path":  "vendor/qcom/opensource/dataservices",
-    "branch":       "m-caf"
+    "branch":       "n-caf"
+  },
+  {
+    "repository":   "NickDoherty81/android_hardware_qcom_audio",
+    "target_path":  "hardware/qcom/audio-caf/msm8916",
+    "branch":       "n-caf-8916"
+  },
+  {
+    "repository":   "NickDoherty81/android_hardware_qcom_display",
+    "target_path":  "hardware/qcom/display-caf/msm8916",
+    "branch":       "n-caf-8916"
+  },
+  {
+    "repository":   "NickDoherty81/android_hardware_qcom_media",
+    "target_path":  "hardware/qcom/media-caf/msm8916",
+    "branch":       "n-caf-8916"
   },
   {
     "repository":   "DirtyUnicorns/android_hardware_qcom_fm",
