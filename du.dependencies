@@ -15,17 +15,17 @@
     "branch":       "n-caf"
   },
   {
-    "repository":   "NickDoherty81/android_hardware_qcom_audio",
+    "repository":   "DirtyUnicorns/android_hardware_qcom_audio",
     "target_path":  "hardware/qcom/audio-caf/msm8916",
     "branch":       "n-caf-8916"
   },
   {
-    "repository":   "NickDoherty81/android_hardware_qcom_display",
+    "repository":   "DirtyUnicorns/android_hardware_qcom_display",
     "target_path":  "hardware/qcom/display-caf/msm8916",
     "branch":       "n-caf-8916"
   },
   {
-    "repository":   "NickDoherty81/android_hardware_qcom_media",
+    "repository":   "DirtyUnicorns/android_hardware_qcom_media",
     "target_path":  "hardware/qcom/media-caf/msm8916",
     "branch":       "n-caf-8916"
   },
