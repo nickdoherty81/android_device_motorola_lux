@@ -22,6 +22,9 @@
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
+
     <!-- Do the battery/notification LEDs support pulsing?
          Used to decide if we show pulse settings -->
     <bool name="config_ledCanPulse">true</bool>
@@ -37,11 +40,11 @@
 
     <!-- Does the notification LED support multiple colors?
          Used to decide if the user can change the colors -->
-    <bool name="config_multiColorNotificationLed">true</bool>
+    <bool name="config_multiColorNotificationLed">false</bool>
 
     <!-- Does the battery LED support multiple colors?
          Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">true</bool>   
+    <bool name="config_multiColorBatteryLed">false</bool>   
 
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
     <bool translatable="false" name="config_wifi_dual_band_support">true</bool>
