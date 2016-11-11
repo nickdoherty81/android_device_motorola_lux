@@ -15,13 +15,12 @@
 
 include device/motorola/msm8916-common/BoardConfigCommon.mk
 
--include vendor/motorola/lux/BoardConfigVendor.mk
-
 DEVICE_PATH := device/motorola/lux
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := lux,lux_uds,xt1562,xt1563
+TARGET_BOOTLOADER_BOARD_NAME := lux
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_lux
@@ -40,8 +39,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2852126720	# 2785280 * 1024 mmcblk0p41
 BOARD_PERSISTIMAGE_PARTITION_SIZE := 8388608	# 8192 * 1024 mmcblk0p29
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 11815223296 # 11538304 * 1024 mmcblk0p42
 
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
+-include vendor/motorola/lux/BoardConfigVendor.mk
