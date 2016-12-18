@@ -18,6 +18,7 @@ include device/motorola/msm8916-common/BoardConfigCommon.mk
 -include vendor/motorola/lux/BoardConfigVendor.mk
 
 DEVICE_PATH := device/motorola/lux
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Asserts
 TARGET_BOOTLOADER_BOARD_NAME := lux
